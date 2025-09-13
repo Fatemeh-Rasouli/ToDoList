@@ -32,7 +32,6 @@ function App() {
     }
     setTodos([...todos,{id : Date.now(),title:todo , done:false}])
     setError(null)
-    //"پیغام خطا رو پاک کن."
     setTodo("")
 
 
@@ -50,7 +49,6 @@ function App() {
       id: todos[index].id,
       title: todos[index].title,
       done:!todos[index].done
-      // done مقدار true داشته باشه، تبدیل میشه به false و برعکس. این همون کاریه که معمولاً برای تیک زدن/برداشتن انجام می‌دیم.
     }
     setTodos(dublicateTodos)
     console.log(todos)
